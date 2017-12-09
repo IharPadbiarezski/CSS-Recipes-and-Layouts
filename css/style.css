@@ -529,8 +529,32 @@ footer {
 
 /* FOOT */
 
+.footarea {
+  min-height: 74px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .foot {
   min-height: 74px;
   color: #8d8d8d;
   background-color: #000;
+}
+
+
+.area1 {
+  display: flex;
+}
+
+.area1 li {
+  list-style-type: none;
+  font-size: 11px;
+  padding: 0 10px 0 10px;
+  border-left: 2px solid #8d8d8d;
+}
+
+.area1 li:first-child {
+  padding-left: 0;
+  border-left: none;
 }

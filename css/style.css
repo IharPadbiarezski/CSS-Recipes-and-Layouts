@@ -287,7 +287,7 @@ main {
 
 .salearea {
   height: 502px;
-  background: red;
+  background: #fff;
 }
 
 .salearea nav a {
@@ -314,7 +314,49 @@ main {
   text-transform: uppercase;
 }
 
+/* CONTENT AREA */
 
+.contentarea {
+  min-height: 564px;
+  border-bottom: 1px solid #d8d8d8;
+  background: #fff;
+}
+
+.contentfild {
+  border-top: 1px solid #d8d8d8;
+}
+
+.elip {
+  margin-top: -78.5px;
+  height: 157px;
+  width: 157px;
+  background: url('../img/Ellipse2.png');
+  margin-bottom: 25px;
+}
+
+.fig {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.figarea {
+  min-width: 220px;
+  min-height: 395px;
+  background: #f7f7f7;
+}
+
+figure {
+
+}
+
+figcaption {
+  color: #373737;
+}
+
+.figarea button i {
+  color: #fff;
+}
 
 /* BRAND AREA */
 

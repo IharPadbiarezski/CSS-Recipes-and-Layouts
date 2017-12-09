@@ -1,0 +1,395 @@
+
+@font-face {
+    font-family: 'luxury_royale_jfregular';
+    src: url('../fonts/LUXURY ROYALE JF/luxury_royale_jf_regular-webfont.woff2') format('woff2'),
+         url('../fonts/LUXURY ROYALE JF/luxury_royale_jf_regular-webfont.woff') format('woff'),
+         url('../fonts/LUXURY ROYALE JF/luxury_royale_jf_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'a_empirialregular';
+    src: url('../fonts/AEmpririal/a_empririal-webfont.woff2') format('woff2'),
+         url('../fonts/AEmpririal/a_empririal-webfont.woff') format('woff'),
+         url('../fonts/AEmpririal/a_Empririal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  font-size: 10px;
+  font-family: 'Arial', sans-serif;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100vw;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* HEADER */
+
+header {
+  width: 100vw;
+  top: 0;
+  height: 650px;
+  background: #fff;
+}
+
+.container {
+  width: 80.83%;
+  margin: 0 auto;
+}
+
+.user-area {
+  height: 30px;
+font-family: 'Arial Regular', sans-serif;
+font-size: 12px;
+  color: #fff;
+  background: #000;
+  text-transform: uppercase;
+}
+
+.cont {
+  margin-top: 8px;
+  float:left;
+}
+
+.cont p {
+  display: inline;
+}
+
+.cont p:last-child {
+  margin-left: 8px;
+}
+
+.cont-2 {
+  float: right;
+}
+
+.cont-2 {
+
+}
+
+.cont-2 p {
+  display: inline-block;
+}
+.cont-2 p:first-child{
+  padding: 8px 0 8px 15px;
+  border-left: 1px solid #444444;
+}
+
+.cont-2 i:nth-child(2) {
+  padding: 8px 14px 8px 10px;
+  border-right: 1px solid #444444;
+}
+
+.cont-2 i:nth-child(3) {
+  margin-left: 14px;
+  color: #666666;
+}
+
+.cont-2 p:nth-child(4) {
+  margin: 0 15px 0 10px;
+}
+
+.cont-2 i:last-child {
+  padding: 8px 9px;
+  border-left: 1px solid #444444;
+  border-right: 1px solid #444444;
+}
+
+.main-header {
+  height: 105px;
+  background: #fff;
+}
+
+logo {
+  margin-top: 40px;
+  float: left;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+nav {
+display: flex;
+justify-content: flex-end;
+}
+
+nav a {
+  color: #000;
+  font-family: 'Arial Regular', sans-serif;
+  font-size: 16px;
+  margin-right: 32px;
+}
+
+.userdata {
+  color: #949393;
+}
+
+.userdata a {
+color: #949393;
+font-family: 'Arial Regular' sans-serif;
+font-size: 12px;
+border: 1px solid #949393;
+padding: 11px 8px;
+}
+
+.userdata a i {
+  margin-left: 139px;
+}
+
+.userdata p {
+
+  max-width: 212px;
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 1px solid #949393;
+  border-left: 1px solid #949393;
+  border-right: 1px solid #949393;
+  font-family: 'Arial Regular' sans-serif;
+  font-size: 11px;
+  padding: 11px 8px;
+}
+
+.slider {
+  height: 440px;
+  background: url(../img/slider-bg-1.jpg) 100% 100% no-repeat;
+  background-size: cover;
+  margin-top: 0;
+}
+
+
+.fa-chevron-left {
+color: #cbcbca;
+  padding: 50px 11px 50px 7px;
+  background: #fefefd;
+}
+
+.fa-chevron-right {
+color: #cbcbca;
+  padding: 50px 7px 50px 11px;
+  background: #fefefd;
+}
+
+.slider button {
+  background: #fd926d;
+  border-bottom: 3px solid #dd6b44;
+}
+
+.cicle {
+  display: flex;
+  flex-direction: row;
+}
+
+.cicle1 {
+  width: 10px;
+  height: 10px;
+  background: #867a76;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.active {
+  background: #fd926d;
+}
+
+/* MAIN */
+
+main {
+  min-height: calc(100vh - 330px);
+}
+
+.contact-line {
+  height: 55px;
+  background: #ededed;
+}
+
+.social {
+  float: right;
+  height: 55px;
+}
+
+.social p {
+  font-family: 'Arial Regular', sans-serif;
+  font-size: 12px;
+  color: #6b6b6b;
+  display: inline-block;
+}
+
+.social a {
+
+}
+
+.social a i {
+  color: #6b6b6b;
+  height: 100%;
+  padding: 0 18px;
+}
+
+.social a i:nth-child(2n+1) {
+  background: #f7f7f7;
+}
+
+.picarea {
+  display: flex;
+}
+
+.figure1 {
+  width: 484px;
+  height: 340px;
+  background: url('../img/pic1.jpg');
+}
+
+.figure2 {
+  width: 484px;
+  height: 169px;
+  background: url('../img/pic2.jpg');
+}
+
+.thirdarea {
+  display: flex;
+  flex-direction: row;
+}
+
+.figure3 {
+  width: 241px;
+  height: 169px;
+  background: url('../img/pic3.jpg');
+}
+
+.figure4 {
+  width: 241px;
+  height: 169px;
+  background: url('../img/pic4.jpg');
+}
+
+
+/* SALEAREA */
+
+.salearea {
+  height: 502px;
+  background: red;
+}
+
+.salearea nav a {
+  color: #555555;
+  text-transform: uppercase;
+}
+
+.active1 a {
+  color: #fff;
+}
+
+.shop {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background: #3d3d3d;
+  color: #fff;
+}
+
+.shop a {
+  color: #fff;
+  font-family: 'Arial Regular', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+
+
+/* BRAND AREA */
+
+.brandarea {
+  color: #414141;
+  text-transform: uppercase;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.brandarea h4 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+.brands {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brands div {
+  height: 46px;
+}
+
+.brands div:first-child {
+  height: 28px;
+  width: 80px;
+  background: url('../img/brand-bg.png') -3px -15px;
+}
+
+.brands div:nth-child(2) {
+  height: 52px;
+  width: 47px;
+  background: url('../img/brand-bg.png') -132px -4px;
+}
+
+.brands div:nth-child(3) {
+  height: 46px;
+  width: 48px;
+  background: url('../img/brand-bg.png') -237px -6px;
+}
+
+.brands div:nth-child(4) {
+  height: 35px;
+  width: 53px;
+  background: url('../img/brand-bg.png') -345px -15px;
+}
+
+.brands div:nth-child(5) {
+  height: 13px;
+  width: 83px;
+  background: url('../img/brand-bg.png') -446px -24px;
+}
+
+.brands div:nth-child(6) {
+  height: 17px;
+  width: 96px;
+  background: url('../img/brand-bg.png') -579px -20px;
+}
+
+.brands div:nth-child(7) {
+  height: 22px;
+  width: 69px;
+  background: url('../img/brand-bg.png') -719px -16px;
+}
+
+.brands div:last-child {
+  height: 23px;
+  width: 133px;
+  background: url('../img/brand-bg.png') -844px -16px;
+}
+
+
+
+
+footer {
+  background: #ededed;
+  height: 330px;
+}

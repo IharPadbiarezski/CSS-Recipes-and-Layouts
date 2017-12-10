@@ -147,7 +147,7 @@ logo {
 
 nav {
 display: flex;
-justify-content: flex-end;
+flex-wrap: wrap;
 }
 
 nav a {
@@ -181,6 +181,7 @@ display: inline-block;
 .userdata p {
   text-align: right;
   max-width: 212px;
+  background: #fafafa;
   display: inline-block;
   text-transform: uppercase;
   border-bottom: 1px solid #949393;
@@ -223,9 +224,16 @@ color: #cbcbca;
   border-bottom: 3px solid #dd6b44;
 }
 
+/*Navpanel of Slidebar */
 .cicle {
+}
+
+.cicle-1 {
+  min-height: 75px;
+  max-width: 130px;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .cicle1 {
@@ -246,9 +254,18 @@ main {
   min-height: calc(100vh - 330px);
 }
 
+/* Contact Line */
+
 .contact-line {
   height: 55px;
   background: #ededed;
+}
+
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .social {
@@ -277,62 +294,96 @@ main {
   background: #f7f7f7;
 }
 
+/*  Section-2 */
+
+.section-2 {
+  margin: 40px 0 50px 0;
+  background: #fff;
+}
+
 .picarea {
   display: flex;
+  height: 340px;
+  margin:
 }
 
 .figure1 {
-  width: 484px;
-  height: 340px;
+  width: 50%;
   background: url('../img/pic1.jpg');
+  background-size: cover;
+}
+
+.secarea {
+  width: 50%;
+  height: 340px;
 }
 
 .figure2 {
-  width: 484px;
-  height: 169px;
+  width: 100%;
+  height: 170px;
   background: url('../img/pic2.jpg');
+  background-size: cover;
 }
 
 .thirdarea {
+  width: 100%;
+  height: 170px;
   display: flex;
   flex-direction: row;
 }
 
 .figure3 {
-  width: 241px;
-  height: 169px;
+  width: 50%;
   background: url('../img/pic3.jpg');
+  background-size: cover;
 }
 
 .figure4 {
-  width: 241px;
-  height: 169px;
+  width: 50%;
   background: url('../img/pic4.jpg');
+  background-size: cover;
 }
 
 
 
 
 
-/* SALEAREA */
+/* First Article Block */
 
-.salearea {
+.section-3 {
   height: 657px;
   background: #fff;
 }
 
-.salearea nav a {
+.navarea {
+  height: 47px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navarea nav {
+  display: flex;
+  align-items: center;
+  height: 47px;
   color: #555555;
   text-transform: uppercase;
 }
 
-.active1 a {
+.active1 {
+  height: 100%;
   color: #fff;
+  background: #fd926d;
 }
+
+/* Sale Content */
 
 .salecontent {
   min-height: 455px;
   background: #fd926d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .salecont {
@@ -617,7 +668,7 @@ footer {
 .footarea {
   min-height: 74px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 

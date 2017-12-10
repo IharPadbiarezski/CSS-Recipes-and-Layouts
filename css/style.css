@@ -58,7 +58,7 @@ header {
 }
 
 .user-area {
-  height: 30px;
+  min-height: 30px;
 font-family: 'Arial Regular', sans-serif;
 font-size: 12px;
   color: #fff;
@@ -66,26 +66,28 @@ font-size: 12px;
   text-transform: uppercase;
 }
 
-.cont {
-  margin-top: 8px;
-  float:left;
+/* HEADLINE */
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.cont p {
+.cont-1 {
+  margin: 8px 0;
+}
+
+.cont-1 p {
   display: inline;
 }
 
-.cont p:last-child {
+.cont-1 p:last-child {
   margin-left: 8px;
 }
 
-.cont-2 {
-  float: right;
-}
 
-.cont-2 {
-
-}
 
 .cont-2 p {
   display: inline-block;
@@ -115,18 +117,32 @@ font-size: 12px;
   border-right: 1px solid #444444;
 }
 
+/* MAIN HEADER */
+
 .main-header {
-  height: 105px;
+  min-height: 105px;
   background: #fff;
 }
 
+.headmain {
+  min-height: 105px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 logo {
-  margin-top: 40px;
-  float: left;
   -moz-user-select: none;
   -khtml-user-select: none;
   user-select: none;
   cursor: default;
+}
+
+.headplace2 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 nav {
@@ -143,6 +159,9 @@ nav a {
 
 .userdata {
   color: #949393;
+  display: flex;
+  flex-direction: column;
+  width: 214px;
 }
 
 .userdata a {
@@ -151,14 +170,16 @@ font-family: 'Arial Regular' sans-serif;
 font-size: 12px;
 border: 1px solid #949393;
 padding: 11px 8px;
+display: inline-block;
 }
 
+
 .userdata a i {
-  margin-left: 139px;
+  float: right;
 }
 
 .userdata p {
-
+  text-align: right;
   max-width: 212px;
   display: inline-block;
   text-transform: uppercase;
@@ -169,6 +190,13 @@ padding: 11px 8px;
   font-size: 11px;
   padding: 11px 8px;
 }
+
+.headbag {
+  float: left;
+}
+
+
+/* SLIDER */
 
 .slider {
   height: 440px;
@@ -283,10 +311,13 @@ main {
 }
 
 
+
+
+
 /* SALEAREA */
 
 .salearea {
-  height: 502px;
+  height: 657px;
   background: #fff;
 }
 
@@ -297,6 +328,16 @@ main {
 
 .active1 a {
   color: #fff;
+}
+
+.salecontent {
+  min-height: 455px;
+  background: #fd926d;
+}
+
+.salecont {
+  display: flex;
+  justify-content: space-between;
 }
 
 .shop {
@@ -476,6 +517,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .cart p {
@@ -548,6 +590,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .secured {

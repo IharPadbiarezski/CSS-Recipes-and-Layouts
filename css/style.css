@@ -1,6 +1,6 @@
 
 @font-face {
-    font-family: 'luxury_royale_jfregular';
+    font-family: 'Luxury Royale Jf';
     src: url('../fonts/LUXURY ROYALE JF/luxury_royale_jf_regular-webfont.woff2') format('woff2'),
          url('../fonts/LUXURY ROYALE JF/luxury_royale_jf_regular-webfont.woff') format('woff'),
          url('../fonts/LUXURY ROYALE JF/luxury_royale_jf_regular-webfont.ttf') format('truetype');
@@ -200,54 +200,194 @@ display: inline-block;
 }
 
 
-/* SLIDER */
+/*SLIDER NEW*/
 
-.slider {
-  height: 440px;
-  background: url(../img/slider-bg-1.jpg) 100% 100% no-repeat;
+.slideshow-container {
+  width: 100vw;
+  position: relative;
+}
+
+.slide-bg-1 {
+  background: url(../img/slider-bg-1.jpg) no-repeat;
+  background-position: center;
   background-size: cover;
   margin-top: 0;
+
+}
+
+.slide-bg-2 {
+  background: url(../img/slider-bg-2.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 0;
+
+}
+.slide-bg-3 {
+  background: url(../img/slider-bg-3.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 0;
+
+}
+.slide-bg-4 {
+  background: url(../img/slider-bg-4.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 0;
+
+}
+.slide-bg-5 {
+  background: url(../img/slider-bg-5.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 0;
+
 }
 
 
-.fa-chevron-left {
-color: #cbcbca;
+.slides {
+  display: none;
+  width: 100vw;
+  height: 440px;
+}
+
+.text {
+ height: 100%;
+}
+
+.slider-title {
+  font-size: 15px;
+ width: 50%;
+ display: flex;
+ flex-direction: column;
+  padding: 8px 16px;
+  bottom: 8px;
+  color: #f2f2f2;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.slider-title div {
+  height: 2px;
+  width: 60%;
+  background: #78645d;
+}
+
+.slider-title h4 {
+  font-family: 'Luxury Royale Jf', sans-serif;
+  font-size: 36px;
+  color: #78645d;
+  margin-top: -30px;
+  background: #f6f3ec;
+  padding: 0 6px;
+
+}
+
+.slider-title h2 {
+  font-family: 'Helvetica Neue Lt Std 87 Heavy Condensed', sans-serif;
+  font-size: 96.04px;
+  margin-top: 8px;
+  line-height: 72px;
+  padding-bottom: 9px;
+text-align: center;
+text-transform: uppercase;
+border-bottom: 4px solid #78645d;
+background: linear-gradient(#c8abae, #f5b38d, #d3afa0);
+ -webkit-background-clip: text;
+ color: transparent;
+}
+
+.slider-title h3 {
+  font-family: 'Helvetica Neue Lt Std 47 Light Condensed', sans-serif;
+font-size: 36px;
+color: #78645d;
+margin-top: 3px;
+margin-bottom: 18px;
+padding: 12px 20px 0 20px;
+line-height: 100%;
+text-transform: uppercase;
+border-top: 1px solid #78645d;
+}
+
+.slider-title a {
+background: #fd926d;
+border-bottom: 3px solid #dd6b44;
+cursor: pointer;
+padding: 22px 25px 20px 25px;
+font-family: 'Helvetica Neue Lt Std 35 Thin', sans-serif;
+font-size: 16px;
+text-transform: uppercase;
+-moz-user-select: none;
+-khtml-user-select: none;
+user-select: none;
+cursor: default;
+  }
+
+  .slider-title a i {
+margin-left: 20px;
+    }
+
+  .slider-title a:active {
+    margin-top: 2px;
+  border-bottom-color: #fd926d;
+  }
+
+
+.prev, .next {
+  position: absolute;
+  top: 35%;
+  color: #cbcbca;
+  background: #fdfcfc;
+  font-weight: bold;
+  padding: 10px 10px;
+  font-size: 18px;
+  cursor: pointer;
+
+
+}
+
+.prev {
   padding: 50px 11px 50px 7px;
-  background: #fefefd;
 }
 
-.fa-chevron-right {
-color: #cbcbca;
+.next {
+  right: 0;
   padding: 50px 7px 50px 11px;
-  background: #fefefd;
 }
 
-.slider button {
-  background: #fd926d;
-  border-bottom: 3px solid #dd6b44;
+.prev:hover, .next:hover {
+  background: rgba(253,146,109,0.8);
 }
 
-/*Navpanel of Slidebar */
-.cicle {
-}
-
-.cicle-1 {
+.navdots {
   min-height: 75px;
-  max-width: 130px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.cicle1 {
+.dots {
   width: 10px;
   height: 10px;
   background: #867a76;
   border-radius: 50%;
-  text-align: center;
+  cursor: pointer;
+  margin: 0 10px 0 10px;
 }
 
-.active {
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from{opacity: 0.4}
+    to{opacity: 1}
+}
+
+.active, .dots:hover {
   background: #fd926d;
 }
 
@@ -308,7 +448,7 @@ input:not([type="submit"]), textarea {
 
 input:not([type="submit"]):active, textarea:active, input:not([type="submit"]):focus, textarea:focus {
   background: #F7F7F7;
-  border-color: #ff9c00;
+  border-color: #fd926d;
   /*box-shadow*/
   -webkit-box-shadow: 2px 2px 7px #E8E8E8 inset;
   -moz-box-shadow: 2px 2px 7px #E8E8E8 inset;
@@ -740,10 +880,36 @@ footer {
 }
 
 .infoblock {
+  min-height: 198px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.infoblock div:first-child {
+  width: 21.16%;
+}
+
+.infoblock div:nth-child(2) {
+  width: 15.84%;
+}
+
+.infoblock div:nth-child(3) {
+  width: 20%;
+}
+
+.infoblock div:nth-child(4) {
+  width: 9.74%;
+}
+
+.infoblock div:nth-child(5) {
+  display: flex;
+  flex-wrap: wrap;
+  width: 19.74%;
+}
+
+.infoblock div:last-child {
 }
 
 .secured {
@@ -795,6 +961,14 @@ footer {
   font-size: 11px;
   padding: 0 10px 0 10px;
   border-left: 2px solid #8d8d8d;
+}
+
+.area1 li a {
+  color: #8d8d8d;
+}
+
+.area1 li a:hover {
+  text-decoration: underline;
 }
 
 .area1 li:first-child {

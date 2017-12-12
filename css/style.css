@@ -876,10 +876,76 @@ margin-left: 10px;
   text-align: center;
 }
 
+.model:hover {
+  width: 240px;
+  height: 415px;
+  transition: 1s;
+}
 
 
-figure {
 
+.trans-1 figure {
+  height: 73%;
+  width: 100%;
+  background: url(../img/mod1.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.trans-2 figure {
+  height: 73%;
+  width: 100%;
+  background: url(../img/mod2.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.trans-3 figure {
+  height: 73%;
+  width: 100%;
+  background: url(../img/mod3.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.trans-4 figure {
+  height: 73%;
+  width: 100%;
+  background: url(../img/mod4.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.tran-1 figure {
+  height: 73%;
+  width: 100%;
+  background: url(../img/model1.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.tran-2 figure {
+  height: 73%;
+  width: 100%;
+  background: url(../img/model2.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.tran-3 figure {
+  height: 73%;
+  width: 100%;
+  background: url(../img/model3.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.tran-4 figure {
+  height: 73%;
+  width: 100%;
+  background: url(../img/model4.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 figcaption {

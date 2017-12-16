@@ -1,18 +1,102 @@
 
 @font-face {
-    font-family: 'Luxury Royale Jf';
-    src: url('../fonts/LUXURY ROYALE JF/luxury_royale_jf_regular-webfont.woff2') format('woff2'),
-         url('../fonts/LUXURY ROYALE JF/luxury_royale_jf_regular-webfont.woff') format('woff'),
-         url('../fonts/LUXURY ROYALE JF/luxury_royale_jf_regular-webfont.ttf') format('truetype');
+    font-family: 'a_Empirial';
+    src: url('../fonts/AEmpririal/a_empririal-webfont.woff2') format('woff2'),
+         url('../fonts/AEmpririal/a_empririal-webfont.woff') format('woff'),
+         url('../fonts/AEmpririal/a_Empririal.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'a_empirialregular';
-    src: url('../fonts/AEmpririal/a_empririal-webfont.woff2') format('woff2'),
-         url('../fonts/AEmpririal/a_empririal-webfont.woff') format('woff'),
-         url('../fonts/AEmpririal/a_Empririal.ttf') format('truetype');
+    font-family: 'Bello Script';
+    src: url('../fonts/Bello Script/Bello Script.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica/Helvetica.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Lt Std BdCn';
+    src: url('../fonts/HelveticaNeueLTStd BdCn/HelveticaNeueLTStd-BdCn.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Lt Std BlkCn';
+    src: url('../fonts/HelveticaNeueLTStd BlkCn/HelveticaNeueLTStd-BlkCn.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Lt Std Cn';
+    src: url('../fonts/HelveticaNeueLTStd Cn/HelveticaNeueLTStd-Cn.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Lt Std HvCn';
+    src: url('../fonts/HelveticaNeueLTStd HvCn/HelveticaNeueLTStd-HvCn.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Lt Std Lt';
+    src: url('../fonts/HelveticaNeueLTStd Lt/HelveticaNeueLTStd-Lt.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Lt Std LtCn';
+    src: url('../fonts/HelveticaNeueLTStd LtCn/HelveticaNeueLTStd-LtCn.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Lt Std LtIt';
+    src: url('../fonts/HelveticaNeueLTStd LtIt/HelveticaNeueLTStd-LtIt.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Lt Std Th';
+    src: url('../fonts/HelveticaNeueLTStd Th/HelveticaNeueLTStd-Th.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTStd ThCn';
+    src: url('../fonts/HelveticaNeueLTStd ThCn/HelveticaNeueLTStd-ThCn.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Lt Std UltLtCn';
+    src: url('../fonts/HelveticaNeueLTStd UltLtCn/HelveticaNeueLTStd-UltLtCn.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Luxury Royale Jf';
+    src: url('../fonts/LUXURY ROYALE JF/luxury_royale_jf_regular-webfont.woff2') format('woff2'),
+         url('../fonts/LUXURY ROYALE JF/luxury_royale_jf_regular-webfont.woff') format('woff'),
+         url('../fonts/LUXURY ROYALE JF/luxury_royale_jf_regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -33,12 +117,17 @@ body {
   background: #fff;
 }
 
+ul li {
+  list-style-type: none;
+}
+
 p {
     font-family: 'Arial Regular', sans-serif;
     font-size: 12px
 }
 
 a {
+    color: #555555;
   text-decoration: none;
 }
 
@@ -93,7 +182,13 @@ font-size: 12px;
 
 .cont-2 p {
   display: inline-block;
+  cursor: pointer;
 }
+
+.cont-2 i {
+  cursor: pointer;
+}
+
 .cont-2 p:first-child{
   padding: 8px 0 8px 15px;
   border-left: 1px solid #444444;
@@ -147,12 +242,12 @@ logo {
   flex-wrap: wrap;
 }
 
-nav {
+.headplace2 nav {
 display: flex;
 flex-wrap: wrap;
 }
 
-nav a {
+.headplace2 nav a {
   color: #000;
   font-family: 'Arial Regular', sans-serif;
   font-size: 16px;
@@ -190,6 +285,22 @@ display: inline-block;
   border-right: 1px solid #949393;
   font-size: 11px;
   padding: 11px 8px;
+}
+
+.menu {
+  display: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.menu h3 {
+  font-family: 'Arial Regular', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.menu i {
+  color: #fff;
 }
 
 .headbag {
@@ -238,7 +349,6 @@ display: inline-block;
   margin-top: 0;
 
 }
-
 
 .slides {
   display: none;
@@ -307,6 +417,8 @@ border-top: 1px solid #78645d;
 }
 
 .slider-title a {
+color: #fff;
+font-weight: normal;
 background: #fd926d;
 border-bottom: 3px solid #dd6b44;
 cursor: pointer;
@@ -593,6 +705,7 @@ input[type=submit]:active, input[type=submit]:focus {
   font-family: 'Helvetica Neue Lt Std 46 Light', sans-serif;
   font-size: 22.03px;
   color: #fff;
+  line-height: 33px;
   width: 33px;
   height: 33px;
   background: #414141;
@@ -697,10 +810,13 @@ text-transform: uppercase;
 -khtml-user-select: none;
 user-select: none;
 cursor: pointer;
+color: #fff;
+text-shadow:  0 2px 0 rgba(0,0,0,0.19);
   }
 
   .figure-3 a i {
     margin-left: 12px;
+    text-shadow:  none;
     }
 
     .figure-3 a:hover {
@@ -732,6 +848,7 @@ margin-bottom: 19px;
 }
 
 .figure-4 a {
+  color: #fff;
 background: #4fafa0;
 cursor: pointer;
 padding: 10px 12px 10px 8px;
@@ -774,11 +891,46 @@ margin-left: 10px;
   text-transform: uppercase;
 }
 
+.navarea nav a {
+  padding-left: 18px;
+  padding-right: 18px;
+  font-family: 'Arial Regular', sans-serif;
+  font-size: 15px;
+}
+
 .active1 {
-  height: 100%;
+  line-height: 47px;;
   color: #fff;
   background: #fd926d;
 }
+
+
+
+.navright {
+  height: 47px;
+  background: #f2f2f2;
+}
+.navright a {
+  color: #979797;
+}
+
+.navright a i {
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 47px;
+
+
+}
+
+.active-2 i {
+  height: 47px;
+  color: #fff;
+  background: #fd926d;
+
+}
+
+
+
 
 /* Sale Content */
 
@@ -795,18 +947,47 @@ margin-left: 10px;
   justify-content: space-between;
 }
 
+.shopit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .shop {
   width: 135px;
   height: 135px;
   border-radius: 50%;
   background: #3d3d3d;
   color: #fff;
+  margin: 0 auto;
 }
 
 .shop a {
   color: #fff;
   font-family: 'Arial Regular', sans-serif;
   font-size: 12px;
+  text-transform: uppercase;
+  background: none;
+  line-height: 135px;
+}
+
+.sale {
+  height: 50px;
+  width: 50px;
+  font-family: 'Helvetica', sans-serif;
+  color: #fff;
+  text-align: left;
+  background: rgb(76,76,76); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(76,76,76,1) 50%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(76,76,76,1) 0%,rgba(76,76,76,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(76,76,76,1) 0%,rgba(76,76,76,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.sale p {
+  font-size: 10px;
+  padding-left: 3px;
+  padding-top: 6px;
   text-transform: uppercase;
 }
 
@@ -845,7 +1026,12 @@ margin-left: 10px;
 
 .elip h4 {
   font-family: 'a_Empirial', sans-serif;
-  font-size: 36px
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.top {
+  margin-top: 15px;
 }
 
 .elip h3 {
@@ -856,11 +1042,6 @@ margin-left: 10px;
 .outer {
   display: flex;
   justify-content: center;
-}
-
-.inner {
-  display: flex;
-  flex-direction: column;
 }
 
 .fig {
@@ -880,6 +1061,7 @@ margin-left: 10px;
   width: 240px;
   height: 415px;
   transition: 1s;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 
@@ -1095,7 +1277,7 @@ margin-left: 12px;
 /* FOOTER */
 
 footer {
-  min-height: 330px;
+  max-height: 330px;
 }
 
 
@@ -1193,9 +1375,19 @@ footer {
   margin-bottom: 8px;
 }
 
-.infoblock p {
+
+.infoblock li {
   font-family: 'Arial Regular', sans-serif;
+  font-size: 12px;
   line-height: 18px;
+}
+
+.infoblock li a {
+  color: #8d8d8d;
+}
+
+.infoblock li a:hover {
+  text-decoration: underline;
 }
 
 .infoblock div:first-child {
@@ -1225,7 +1417,11 @@ footer {
   background: #4c4c4b;
   width: 35px;
   height: 35px;
+  line-height: 35px;
+  text-align: center;
   border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .icons a i:hover {
@@ -1282,7 +1478,6 @@ footer {
 }
 
 .area1 li {
-  list-style-type: none;
   font-size: 11px;
   padding: 0 10px 0 10px;
   border-left: 2px solid #8d8d8d;
@@ -1299,4 +1494,143 @@ footer {
 .area1 li:first-child {
   padding-left: 0;
   border-left: none;
+}
+
+.area2 {
+  display: none;
+}
+
+/* iPad */
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    width: 96.05%;
+  }
+
+  .headplace2 nav {
+  display: none;
+  }
+
+  .menu {
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #fd926d;
+    margin-bottom: 17px;
+
+  }
+
+  .menu-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.mod01 {
+  display: none;
+}
+
+.mod02 {
+  display: none;
+}
+
+.trans-4 {
+  display: none;
+}
+
+.tran-4 {
+  display: none;
+}
+
+  .brands {
+    justify-content: space-around;
+  }
+
+  .brands div:nth-child(7) {
+    display: none;
+  }
+
+  .brands div:last-child {
+    display: none;
+  }
+
+
+
+}
+
+
+
+
+/* iPhone */
+
+@media screen and (max-width: 640px) {
+
+  .container {
+    width: 95.31%;
+    margin: 0 auto;
+  }
+
+/* Slider */
+
+.slideshow-container {
+  display: none;
+}
+
+.navdots {
+  display: none;
+}
+
+/* Section 2 */
+
+.section-2 {
+  display: none;
+}
+
+
+
+
+
+/* Brand Area */
+
+.brandarea {
+  display: none;
+}
+
+
+/* Text Area */
+
+.textarea {
+  display: none;
+}
+
+/* Footer */
+
+.payarea {
+  display: none;
+}
+
+.infoarea {
+  display: none;
+}
+
+
+
+.area1 {
+  display: none;
+}
+
+.area2 {
+  color: #fff;
+  display: block;
+}
+
+.area2 i {
+  color: #fff;
+}
+
+
 }
